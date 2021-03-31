@@ -16,6 +16,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReservedRoomComponent } from './reserved-room/reserved-room.component';
 import { ReserveARoomComponent } from './reserve-aroom/reserve-aroom.component';
 import { HomeComponent } from './home/home.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,7 @@ import { HomeComponent } from './home/home.component';
     ReservedRoomComponent,
     ReserveARoomComponent,
     HomeComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,10 @@ import { HomeComponent } from './home/home.component';
     MatIconModule,
     MatSliderModule,
     NgbModule,
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
 
   ],
   providers: [],
