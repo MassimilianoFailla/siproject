@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { tableConfig } from '../Config/tableConfig';
 
 @Component({
   selector: 'app-table',
@@ -8,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class TableComponent implements OnInit {
 
   constructor() { }
+
+  // unica configurazione tabella
+  @Input() tables: tableConfig;
+
 
   ngOnInit(): void {
   }

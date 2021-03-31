@@ -12,4 +12,13 @@ export class ReservationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  headerRes = [
+    { key: 'id', label: 'ID Prenotazione'},
+    { key: 'dataInizio', label: 'Data Inizio Prenotazione'},
+    { key: 'dataFine', label: 'Data Fine Prenotazione'},
+    { key: 'approvazione', label: 'Approvazione' },
+  ];
+
+
+
 }

@@ -15,6 +15,7 @@ import {MatSliderModule} from '@angular/material/slider';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReservedRoomComponent } from './reserved-room/reserved-room.component';
 import { ReserveARoomComponent } from './reserve-aroom/reserve-aroom.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { ReserveARoomComponent } from './reserve-aroom/reserve-aroom.component';
     ButtonComponent,
     ReservedRoomComponent,
     ReserveARoomComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
