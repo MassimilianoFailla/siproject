@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand" href="http://si2001.it/Index.html">
+        <img src="http://si2001.it/img/logo_colore.jpg" width="60" height="50">
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/reservedRoom">
+                    <button [ngClass]="buttonReservation.customCssClass">
+                <mat-icon> {{buttonReservation.icon}} </mat-icon> {{buttonReservation.text}}
+              </button>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/reserveARoom">
+                    <button [ngClass]="buttonForReservation.customCssClass">
+                <mat-icon> {{buttonForReservation.icon}} </mat-icon> {{buttonForReservation.text}}
+              </button>
+                </a>
+            </li>
+
+        </ul>
+
+        </div>
+
+</nav>
